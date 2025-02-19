@@ -1,21 +1,45 @@
-import { Link } from "react-router-dom";
-export default function CourseNavigation() {
-  return (
-    <div id="wd-courses-navigation">
-      <ul>
-      <li><Link to="/Kambaz/Courses/1234/Home" id="wd-course-home-link">Home</Link><br/></li>
-      <li><Link to="/Kambaz/Courses/1234/Modules" id="wd-course-modules-link">Modules
-        </Link><br/></li>
-        <li><Link to="/Kambaz/Courses/1234/Piazza" id="wd-course-piazza-link">Piazza</Link><br/></li>
-        <li><Link to="/Kambaz/Courses/1234/Zoom" id="wd-course-zoom-link">Zoom</Link><br/></li>
-        <li><Link to="/Kambaz/Courses/1234/Assignments" id="wd-course-quizzes-link">
-          Assignments</Link><br/></li>
-          <li><Link to="/Kambaz/Courses/1234/Quizzes" id="wd-course-assignments-link">Quizzes
-        </Link><br/></li>
-        <li><Link to="/Kambaz/Courses/1234/Grades" id="wd-course-grades-link">Grades</Link><br/></li>
-        <li><Link to="/Kambaz/Courses/1234/People" id="wd-course-people-link">People</Link><br/></li>
-      </ul>
+import { courses } from "../Database";
+import { ListGroup } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
+import { useParams } from "react-router";
+
+export default function CourseNavigation() { 
+  const { cid } = useParams();
+  const course = courses.find((course) => course._id === cid);
+
+  const { pathname } = useLocation();
+
+  if (!course) {
+    return <p className="text-danger">Course not found!</p>;
+  }
+
+  const links = [
+    { label: "Home", path: `/Kambaz/Courses/${course._id}/Home` },
+    { label: "Modules", path: `/Kambaz/Courses/${course._id}/Modules` },
+    { label: "Piazza", path: `/Kambaz/Courses/${course._id}/Piazza` },
+    { label: "Zoom", path: `/Kambaz/Courses/${course._id}/Zoom` },
+    { label: "Assignments", path: `/Kambaz/Courses/${course._id}/Assignments` },
+    { label: "Quizzes", path: `/Kambaz/Courses/${course._id}/Quizzes` },
+    { label: "Grades", path: `/Kambaz/Courses/${course._id}/Grades` },
+    { label: "People", path: `/Kambaz/Courses/${course._id}/People` }
+  ];
+
+  return ( 
+    <div>
+      
+      <ListGroup id="wd-courses-navigation" className="wd list-group fs-5 rounded-0"> 
+        {links.map((link) => (
+          <ListGroup.Item 
+            key={link.path} 
+            as={Link} 
+            to={link.path} 
+            className={`list-group-item border border-0 
+              ${pathname.includes(link.label) ? "active border border-0" : "text-danger border border-0"}`}
+          >
+            {link.label}
+          </ListGroup.Item>
+        ))}
+      </ListGroup> 
     </div>
-    
-  );
+  ); 
 }
