@@ -30,7 +30,7 @@ export default function Courses({ courses }: { courses: any[]; }) {
                 <Route path="Zoom" element={<Zoom/>} />
                 <Route path="Assignments" element={<Assignments />} />
                 <Route path="Assignments/:aid" element={<AssignmentEditor />} />
-                <Route path="Assignments/:aid/AssignmentEditorViewOnly" element={<AssignmentEditorViewOnly />} />
+                <Route path="Assignments/:aid/AssignmentEditor" element={<AssignmentEditorViewOnly />} />
                 <Route path="Quizzes" element={<Quizzes />} />
                 <Route path="People" element={<PeopleTable />} />
                 <Route path="Settings" element={<Settings />} />
