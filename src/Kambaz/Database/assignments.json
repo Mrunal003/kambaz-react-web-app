@@ -4,80 +4,107 @@
     "title": "Propulsion Assignment",
     "course": "RS101",
     "due_date": "2025-03-10",
-    "points": 120,
+    "points": "120",
     "available_from": "2025-02-20",
-    "available_until": "2025-03-10"
+    "available_until": "2025-03-10",
+    "editor_available_from": "2025-02-21",
+    "editor_due_date": "2025-03-08",
+    "description": "Analyze various propulsion systems, their efficiencies, and thrust calculations."
   },
   {
     "_id": "A102",
     "title": "Combustion Analysis",
     "course": "RS101",
     "due_date": "2025-03-15",
-    "points": 80,
+    "points": "80",
     "available_from": "2025-02-25",
-    "available_until": "2025-03-15"
+    "available_until": "2025-03-15",
+    "editor_available_from": "2025-02-26",
+    "editor_due_date": "2025-03-13",
+    "description": "Evaluate combustion efficiency, fuel types, and heat release rates in rocket engines."
   },
   {
     "_id": "A103",
     "title": "Nozzle Design Project",
     "course": "RS101",
     "due_date": "2025-03-20",
-    "points": 90,
+    "points": "90",
     "available_from": "2025-03-01",
-    "available_until": "2025-03-20"
+    "available_until": "2025-03-20",
+    "editor_available_from": "2025-03-02",
+    "editor_due_date": "2025-03-18",
+    "description": "Design an optimal rocket nozzle considering expansion ratios and thrust performance."
   },
   {
     "_id": "A201",
     "title": "Aerodynamics Quiz",
     "course": "RS102",
     "due_date": "2025-03-12",
-    "points": 80,
+    "points": "80",
     "available_from": "2025-02-22",
-    "available_until": "2025-03-12"
+    "available_until": "2025-03-12",
+    "editor_available_from": "2025-02-23",
+    "editor_due_date": "2025-03-10",
+    "description": "Test knowledge on fundamental aerodynamic principles and airflow behavior."
   },
   {
     "_id": "A202",
     "title": "Flow Analysis",
     "course": "RS102",
     "due_date": "2025-03-18",
-    "points": 67,
+    "points": "67",
     "available_from": "2025-02-28",
-    "available_until": "2025-03-18"
+    "available_until": "2025-03-18",
+    "editor_available_from": "2025-02-29",
+    "editor_due_date": "2025-03-16",
+    "description": "Perform fluid flow analysis using computational and experimental methods."
   },
   {
     "_id": "A203",
     "title": "Heating Analysis",
     "course": "RS102",
     "due_date": "2025-03-22",
-    "points": 99,
+    "points": "99",
     "available_from": "2025-03-05",
-    "available_until": "2025-03-22"
+    "available_until": "2025-03-22",
+    "editor_available_from": "2025-03-06",
+    "editor_due_date": "2025-03-20",
+    "description": "Analyze thermal effects on aerospace structures and heat transfer mechanisms."
   },
   {
     "_id": "A301",
     "title": "Structural Design Task",
     "course": "RS103",
     "due_date": "2025-03-14",
-    "points": 110,
+    "points": "110",
     "available_from": "2025-02-24",
-    "available_until": "2025-03-14"
+    "available_until": "2025-03-14",
+    "editor_available_from": "2025-02-25",
+    "editor_due_date": "2025-03-12",
+    "description": "Develop structural components for aerospace applications considering stress analysis."
   },
   {
     "_id": "A302",
     "title": "Orbital Calculations",
     "course": "RS103",
     "due_date": "2025-03-19",
-    "points": 95,
+    "points": "95",
     "available_from": "2025-03-02",
-    "available_until": "2025-03-19"
+    "available_until": "2025-03-19",
+    "editor_available_from": "2025-03-03",
+    "editor_due_date": "2025-03-17",
+    "description": "Compute orbital parameters, transfer orbits, and velocity requirements."
   },
   {
     "_id": "A303",
     "title": "Systems Engineering Exam",
     "course": "RS103",
     "due_date": "2025-03-25",
-    "points": 150,
+    "points": "150",
     "available_from": "2025-03-10",
-    "available_until": "2025-03-25"
+    "available_until": "2025-03-25",
+    "editor_available_from": "2025-03-11",
+    "editor_due_date": "2025-03-23",
+    "description": "Assess knowledge of systems engineering principles, integration, and project lifecycle."
   }
 ]

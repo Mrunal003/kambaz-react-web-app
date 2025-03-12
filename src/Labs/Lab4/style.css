@@ -1,0 +1,44 @@
+.array-container {
+    width: 200px; /* Adjust width as needed */
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
+  }
+  
+  h2 {
+    color: #333; /* Dark grey color for text */
+  }
+  
+  .add-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px; /* Space between items */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

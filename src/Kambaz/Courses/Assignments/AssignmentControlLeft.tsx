@@ -5,7 +5,6 @@ export default function LessonControlButtons() {
     <div className="float-strart">
         <BsGripVertical className="me-2 fs-3" />
       <IoNewspaperOutline className="fs-4 text-success" />    
-      
     </div>
   );
 }
